@@ -23,6 +23,38 @@
                 <label id="number-label" for="year">Born year:</label>
                 <input type="number" name="year" id="number" min="4" max="10" class="input-field" placeholder="Type the year you born">
             </div>
+            <div>
+                <label for="chooseEditor">What's your favorite code editor?</label>
+                <select name="chooseEditor" id="dropdown" class="dropdown">
+                    <option value="vscode">Visual Studio Code</option>
+                    <option value="sublimetext">Sublime Text</option>
+                    <option value="atom">Atom</option>
+                    <option value="webstorm">WebStorm</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="rate">Do you recommend our service to a friend?</label>
+                <ul style="list-style: none;">
+                    <li class="option"><label>For sure<input name="radio-buttons" value="1" type="radio" class="rating"></label></li>
+                    <li class="option"><label>Maybe<input name="radio-buttons" value="2" type="radio" class="rating"></label></li>
+                    <li class="option"><label>Not sure<input name="radio-buttons" value="3" type="radio" class="rating"></label></li>
+                </ul>
+            </div>
+            <div>
+                <label for="Things about Web Development that you like:"></label>
+                <ul style="list-style: none;">
+                    <li class="checkbox"><label><input name="things" value="1" type="checkbox" class="things">Design</label></li>
+                    <li class="checkbox"><label><input name="things" value="1" type="checkbox" class="things">Programming</label></li>
+                    <li class="checkbox"><label><input name="things" value="1" type="checkbox" class="things">Frameworks</label></li>
+                    <li class="checkbox"><label><input name="things" value="1" type="checkbox" class="things"></label>Multiplatform web apps</li>
+                </ul>
+            </div>
+            <div>
+                <label for="comments">Any suggestions for this form?</label>
+                <textarea name="comments" id="comment" cols="30" rows="10" class="input-field" placeholder="Enter your comment here..."></textarea>
+            </div>
+            <button id="submit" type="submit">Submit</button>
         </form>
     </main>
 </body>
