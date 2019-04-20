@@ -10,7 +10,20 @@
     <main>
         <h1 id="title">Interactive Form</h1>
         <p id="description">Responsive web design project</p>
-        <form action="" id="survey-form"></form>
+        <form action="" id="survey-form">
+            <div>
+                <label id="name-label" for="name">* Name:</label>
+                <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Type your name" required>
+            </div>
+            <div>
+                <label id='email-label' for="email">* Email:</label>
+                <input type="email" name="email" id="email" class="input-field" placeholder="Type your email" required>
+            </div>
+            <div>
+                <label id="number-label" for="year">Born year:</label>
+                <input type="number" name="year" id="number" min="4" max="10" class="input-field" placeholder="Type the year you born">
+            </div>
+        </form>
     </main>
 </body>
 </html>
