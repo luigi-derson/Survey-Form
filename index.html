@@ -5,25 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <h1 id="title">Interactive Form</h1>
+        <h1 id="title">Survey Form</h1>
         <p id="description">Responsive web design project</p>
         <form action="" id="survey-form">
-            <div>
-                <label id="name-label" for="name">* Name:</label>
+            <div class="steps">
+                <label id="name-label" for="name">Name</label>
                 <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Type your name" required>
             </div>
-            <div>
-                <label id='email-label' for="email">* Email:</label>
-                <input type="email" name="email" id="email" class="input-field" placeholder="Type your email" required>
+            <div class="steps">
+                <label id='email-label' for="email">Email</label>
+                <input type="email" name="email" id="email" class="input-field" placeholder="some@email.com" required>
             </div>
-            <div>
-                <label id="number-label" for="year">Born year:</label>
-                <input type="number" name="year" id="number" min="4" max="10" class="input-field" placeholder="Type the year you born">
+            <div class="steps">
+                <label id="number-label" for="year">Born year</label>
+                <input type="number" name="year" id="number" min="0" max="3000" class="input-field" placeholder="Type the year you born">
             </div>
-            <div>
+            <div class="steps">
                 <label for="chooseEditor">What's your favorite code editor?</label>
                 <select name="chooseEditor" id="dropdown" class="dropdown">
                     <option value="vscode">Visual Studio Code</option>
@@ -33,28 +34,31 @@
                     <option value="other">Other</option>
                 </select>
             </div>
-            <div>
+            <div class="steps">
                 <label for="rate">Do you recommend our service to a friend?</label>
                 <ul style="list-style: none;">
-                    <li class="option"><label>For sure<input name="radio-buttons" value="1" type="radio" class="rating"></label></li>
-                    <li class="option"><label>Maybe<input name="radio-buttons" value="2" type="radio" class="rating"></label></li>
-                    <li class="option"><label>Not sure<input name="radio-buttons" value="3" type="radio" class="rating"></label></li>
+                    <li class="option"><label><input name="radio-buttons" value="1" type="radio" class="rating">For sure</label></li>
+                    <li class="option"><label><input name="radio-buttons" value="2" type="radio" class="rating">Maybe</label></li>
+                    <li class="option"><label><input name="radio-buttons" value="3" type="radio" class="rating">Not sure</label></li>
                 </ul>
             </div>
-            <div>
-                <label for="Things about Web Development that you like:"></label>
+            <div class="steps">
+                <label for="things">Things about Web Development that you like:</label>
                 <ul style="list-style: none;">
                     <li class="checkbox"><label><input name="things" value="1" type="checkbox" class="things">Design</label></li>
-                    <li class="checkbox"><label><input name="things" value="1" type="checkbox" class="things">Programming</label></li>
-                    <li class="checkbox"><label><input name="things" value="1" type="checkbox" class="things">Frameworks</label></li>
-                    <li class="checkbox"><label><input name="things" value="1" type="checkbox" class="things"></label>Multiplatform web apps</li>
+                    <li class="checkbox"><label><input name="things" value="2" type="checkbox" class="things">Programming</label></li>
+                    <li class="checkbox"><label><input name="things" value="3" type="checkbox" class="things">Frameworks</label></li>
+                    <li class="checkbox"><label><input name="things" value="4" type="checkbox" class="things">Multiplatform web apps</label></li>
                 </ul>
             </div>
-            <div>
+            <div class="steps">
                 <label for="comments">Any suggestions for this form?</label>
                 <textarea name="comments" id="comment" cols="30" rows="10" class="input-field" placeholder="Enter your comment here..."></textarea>
             </div>
-            <button id="submit" type="submit">Submit</button>
+            <div class="steps">
+                <button id="submit" type="submit">Submit</button>
+            </div>
+            
         </form>
     </main>
 </body>
