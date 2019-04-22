@@ -24,7 +24,6 @@ main {
 h1{
     font-size: 3.8em;
     text-align: left;
-    padding: 0 10%;
     line-height: 1;
     color: #DC143C;
 }
@@ -32,7 +31,6 @@ h1{
 p {
     font-size: 1.5em;
     text-align: left;
-    padding-left: 10%;
     padding-bottom: 1rem;
     padding-top: 1.2rem;
 }
